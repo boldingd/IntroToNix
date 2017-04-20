@@ -26,6 +26,7 @@ The `whoami` command simply prints your username.
 As it turns out, there are quite a few caveats and subtleties to that statement, but we will consider those later.)
 
 To run `whoami`, simply type it and press enter; you should see output like this:
+
     $ whoami
     David Bolding
 
@@ -48,8 +49,10 @@ Does `whoami` do anything else?
 Not much.
 It does have two useful *options*, `help` and `version`.
 We can give `whoami` the `version` option, like this:
+
     $whoami --version
     whoami (GNU coreutils) 8.25
+
 (There was more output, which was not included.)
 
 Note the two preceding dashes -- it's `--version`.
@@ -63,13 +66,16 @@ As the internet has grown in prominance, many *Nix programs no longer include us
 
 The `date` command is worth a mention.
 When run, `date` prints date and time:
+
     $ date
     Wed, Apr 19, 2017 11:52:44 PM
 
 Unlike `whoami`, `date` has several options, mainly relating to how to format the output.
 Particularly useful is `-I`, which uses prints just the date, in "international format":
+
     $ date -I
     2017-04-19
+
 Note that that is a capitol-I.
 \*Nix in general - and the terminal in specific - are case-sensitive.
 Lower-case i will not work:
