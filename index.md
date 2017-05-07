@@ -39,7 +39,7 @@ Contents will be filled out and linked-to as they are completed.
 What is here at present serves as an outline for what we hope to do.
 
 1. What is *Nix: History and Philosophy
-1. [Basic *Nix](ch2_basics/basics "Basic *Nix")
+1. [Basic \*Nix](ch_basics/basics "Basic *Nix")
 1. Useful Commands
 1. Vim
 1. Pipelines and "Useful Pipeline Programs"

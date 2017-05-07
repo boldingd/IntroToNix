@@ -88,3 +88,28 @@ Again, one might ask why we would need such a command.
 
 Let's consider some more immediately useful commands.
 You can list the contents of the current directory with `ls`:
+
+    $ ls
+    'everyone knows'  lies  secrets  sources.txt  witnesses.txt
+
+Your output is likely to be different, of course.
+Earlier, we said that `ls` would list the contents of the "current" directory; in the above example, I listed the contents of a directory called "knowledge".
+How did the `ls` command know to list that directory?
+
+Every process on a \*Nix system has a *current working directory*, which is frequencly abbreviated CWD.
+The CWD is part of a process's *environment*.
+Each process has its own environment, and so each process can have it's own CWD.
+However, environments are *inherited*: when one program starts another, the *child* program inherits a copy of the *parent*'s environment -- including the parent's CWD.
+Thus, the shell has some notion of what its CWD is; when we start the `ls` command, `ls` inherits the shell's CWD.
+
+We can tell `ls` to list another directory -- or several other directories, in fact.
+We simply give each directory as an argument.
+
+    $ ls secrets/ lies/
+    lies/:
+    alchemy.txt
+
+    secrets/:
+    'carcosa location.txt'  'CGB Spender Home Address.txt'
+
+
